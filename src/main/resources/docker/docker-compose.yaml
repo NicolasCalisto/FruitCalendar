@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  postgres:
+    container_name: api_fruit_calendar_db
+    image: postgres:16.2-alpine3.19
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: api_fruit_calendar
